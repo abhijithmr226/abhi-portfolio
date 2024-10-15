@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Abhijith MR - Cyber Security Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header with Logo (Sticky) -->
+    <header class="sticky-header">
+        <div class="logo">
+            <img src="/images/logo.png" alt="Logo">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#services"><i class="fas fa-cogs"></i> Services</a></li>
+                <li><a href="#certificates"><i class="fas fa-award"></i> Certificates</a></li>
+                <li><a href="#testimonials"><i class="fas fa-comment-dots"></i> Testimonials</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu-menu" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+    
+    <section class="hero" id="home">
+        <div id="particles-js"></div> <!-- Particle Container -->
+
+            <!-- Hero Background Image -->
+            <div class="hero-background" id="heroBackground"></div>
+
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <h1 class="dynamic-text">HAI THERE.... I AM ABHIJITH</h1>
+            <h2 class="designation" id="dynamic-designation">
+                <span class="designation-text">Cybersecurity Expert</span>
+            </h2>
+                        <p class="description">Let's secure your digital space with innovative solutions.</p>
+                        <br>
+            <a href="" class="cta-btn">Download My CV</a>
+        </div>
+
+        <!-- Scroll to Top Button -->
+        <div class="scroll-to-top" id="scrollToTop">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <div class="container">
+        <h1 class="container-title">Our Services</h1>
+        <div class="gradient-cards">
+            <div class="card bg-green-box">
+                <div class="container-card">
+                    <i class="fas fa-palette service-icon"></i>
+                    <h3 class="card-title">Brand Identity</h3>
+                    <p class="card-description">We create recognizable and consistent visual identities for your brand.</p>
+                </div>
+            </div>
+            <div class="card bg-white-box">
+                <div class="container-card">
+                    <i class="fas fa-code service-icon"></i>
+                    <h3 class="card-title">Web Development</h3>
+                    <p class="card-description">We build fast, modern websites optimized for SEO and mobile responsiveness.</p>
+                </div>
+            </div>
+            <div class="card bg-yellow-box">
+                <div class="container-card">
+                    <i class="fas fa-shield-virus service-icon"></i>
+                    <h3 class="card-title">Cybersecurity Solutions</h3>
+                    <p class="card-description">Providing comprehensive cybersecurity measures to protect your digital assets.</p>
+                </div>
+            </div>
+            <div class="card bg-blue-box">
+                <div class="container-card">
+                    <i class="fas fa-comments service-icon"></i>
+                    <h3 class="card-title">Consulting</h3>
+                    <p class="card-description">Expert advice tailored to enhance your brand's digital presence.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Certificates Section -->
+    <section class="certificates" id="certificates">
+        <h2><i class="fas fa-certificate"></i> Certificates I've Earned</h2>
+        <div class="certificate-grid">
+            <div class="certificate" onclick="openModal('/images/certificate1.png', 'Problem Solving')">
+                <img src="/images/certificate1.png" alt="Certificate 1" class="certificate-img">
+                <h4>Problem Solving</h4>
+            </div>
+            <div class="certificate" onclick="openModal('/images/certificate2.png', 'JavaScript')">
+                <img src="/images/certificate2.png" alt="Certificate 2" class="certificate-img">
+                <h4>JavaScript</h4>
+            </div>
+            <div class="certificate" onclick="openModal('/images/certificate3.png', 'Python')">
+                <img src="/images/certificate3.png" alt="Certificate 3" class="certificate-img">
+                <h4>Python</h4>
+            </div>
+            <div class="certificate" onclick="openModal('/images/certificate4.jpg', 'Ethical Hacking Associate')">
+                <img src="/images/certificate4.jpg" alt="Certificate 4" class="certificate-img">
+                <h4>Ethical Hacking Associate</h4>
+            </div>
+            <div class="certificate" onclick="openModal('/images/certificate5.png', 'IT Leadership')">
+                <img src="/images/certificate5.png" alt="Certificate 5" class="certificate-img">
+                <h4>IT Leadership</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for displaying certificate images -->
+    <div class="modal" id="certificateModal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <img id="modalImage" src="" alt="Certificate" style="max-width: 100%; border-radius: 10px;">
+            <h3 id="modalTitle"></h3>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial">
+                <i class="fas fa-quote-left"></i>
+                <p>"Abhijith's work on our website was outstanding. He not only delivered a beautiful design but also ensured that everything was optimized for performance. We saw an immediate increase in traffic!"</p>
+                <h4>- Priya Nair, Marketing Manager at Kerala Ventures</h4>
+            </div>
+            <div class="testimonial">
+                <i class="fas fa-quote-left"></i>
+                <p>"I was impressed by Abhijith's attention to detail and his understanding of cybersecurity. He helped us identify key vulnerabilities and secure our entire system. I would highly recommend him for any security-related projects."</p>
+                <h4>- Rajesh Sharma, CEO of SecureTech India</h4>
+            </div>
+            <div class="testimonial">
+                <i class="fas fa-quote-left"></i>
+                <p>"Abhijith transformed our outdated website into a sleek, modern platform. His technical skills are remarkable, and he was a pleasure to collaborate with throughout the process."</p>
+                <h4>- Sneha Mehta, Founder of Mehta Designs</h4>
+            </div>
+        </div>
+    </section>
+
+   <!-- Contact Section -->
+   <section class="contact">
+       <h2>Interested in talking? Let’s do it.</h2>
+       <div class="contact-options">
+           <a href="mailto:abhijithmr226@gmail.com" class="cta-btn">
+               <i class="fas fa-envelope"></i> Email Me
+           </a>
+           <a href="mob:6235962254" class="cta-btn">
+               <i class="fas fa-phone"></i> Call Me
+           </a>
+           <a href="https://www.linkedin.com/in/abhijith226" target="_blank" class="cta-btn">
+               <i class="fab fa-linkedin"></i> Connect on LinkedIn
+           </a>
+           <a href="https://github.com/abhijithmr226" target="_blank" class="cta-btn">
+               <i class="fab fa-github"></i> View My GitHub
+           </a>
+       </div>
+   </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Abhijith MR. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Particle JS Configuration
+        particlesJS.load('particles-js', 'particles.json', function() {
+            console.log('callback - particles.js config loaded');
+        });
+
+        // Scroll to Top Functionality
+        const scrollToTopButton = document.getElementById('scrollToTop');
+        window.onscroll = function() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollToTopButton.style.display = "block";
+            } else {
+                scrollToTopButton.style.display = "none";
+            }
+        };
+
+        scrollToTopButton.onclick = function() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+        };
+        
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+        mobileMenuBtn.onclick = function() {
+            navLinks.classList.toggle('active');
+        };
+
+        // Modal Functionality for Certificates
+        function openModal(imageSrc, title) {
+            document.getElementById('modalImage').src = imageSrc;
+            document.getElementById('modalTitle').innerText = title;
+            document.getElementById('certificateModal').style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('certificateModal').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
